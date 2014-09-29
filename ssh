@@ -1,0 +1,1 @@
+vagrant ssh -- -t 'sudo su -l git'
