@@ -9,6 +9,11 @@ Vagrant::Config.run do |config|
 end
 
 Vagrant.configure("2") do |config|
+  
+  config.vm.network "forwarded_port", guest: 3000, host: 3000
+  config.vm.network "forwarded_port", guest: 9200, host: 9200
+  config.vm.network "forwarded_port", guest: 9292, host: 9292
+  
   config.vm.provider :vmware_fusion do |v, override|
     override.vm.box = "precise64"
     override.vm.box_url = "http://files.vagrantup.com/precise64_vmware.box"
