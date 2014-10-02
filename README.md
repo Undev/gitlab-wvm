@@ -8,6 +8,8 @@ tested on ansible 1.7.0
 ``` bash
 $ cd gitlab-wvm
 $ prepare.sh
+$ git clone git@git.undev.cc:infrastructure/gitlab.git
+$ git clone git@git.undev.cc:infrastructure/gitlab-shell.git
 $ vagrant up
 ```
 
