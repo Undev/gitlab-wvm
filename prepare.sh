@@ -10,5 +10,6 @@ ansible-galaxy install zzet.rbenv,1.2.1  --roles-path='./provisioning/roles'
 ansible-galaxy install zzet.runit,0.0.1.1  --roles-path='./provisioning/roles'
 ansible-galaxy install zzet.postgresql,0.5.7  --roles-path='./provisioning/roles'
 ansible-galaxy install zzet.gitlab,master  --roles-path='./provisioning/roles'
+ansible-galaxy install nicolai86.phantomjs  --roles-path='./provisioning/roles'
 echo ""
 echo "please, run vagrant up"
